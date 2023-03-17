@@ -50,3 +50,18 @@ function join (array) {
 console.log(join([1, "Manzana", true]))
 console.log(join([]))
 console.log(join(["El", "perro", "juega", "con", "la", "pelota"]))
+
+function joinCorregido (array) {
+    let frase = "";
+    for (let i = 0; i < array.length; i ++) {
+        if (i !== array.length -1) {
+            frase += array[i] + " ";
+        }else {
+            frase += array[i];
+        }       
+    }
+    return frase
+    }
+    console.log(joinCorregido([1, "Manzana", true]))
+    console.log(joinCorregido([]))
+    console.log(joinCorregido(["El", "perro", "juega", "con", "la", "pelota"]))
